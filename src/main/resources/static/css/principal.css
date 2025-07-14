@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400,800&display=swap');
+html {
+    min-height: 100%;
+    position: relative;
+}
+body{
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+.footer {
+    background-color: black;
+    position: relative;
+    bottom: 0;
+
+    width: 100%;
+    height: 180px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel {
+    width: 100%;
+    box-shadow: 7px 7px 14px #c5ced8;
+    border-radius: 5%;
+    padding: 2em;
+    overflow-x: hidden;
+
+}
+
+.carousel .grande {
+    width: 300%;
+    background-color: white;
+    padding: 0em;
+    box-shadow: 7px 7px 14px #c5ced8;
+    border-radius: 5%;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content:space-around;
+    align-items: center;
+    transition: all .5s ease;
+    transform: translateX(0%);
+}
+
+.carousel .img {
+    width: calc(100% / 3 - 3.99em);
+
+    /* height: auto;*/
+    background-color: #ecefec;
+    padding: 0;
+    max-width: 100%;
+    /*max-height: 14em;*/
+    height: 30em;
+    object-fit: fill;
+    box-shadow: 7px 7px 14px #c5ced8;
+    border-radius: 0.5%;
+    min-height: 10vh;
+
+
+}
+
+.carousel .puntos {
+    width: 100%;
+    margin: 1em 0 0;
+    padding: .4em;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;                    
+}
+
+.carousel .punto {
+    list-style: none;
+    width: 2em;
+    height: 2em;
+    margin: 1em 1em 0;
+    box-shadow: 7px 7px 14px #c5ced8;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.carousel .punto.activo {
+    background-color: orange;
+
+}
+
+.Informacion-container{
+ padding-bottom: 50px;
+}
+.Informacion-content {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+    
+
+}
+
+.Informacion-1 {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-top: 5px;
+  
+ }
+.Informacion-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-top: 5px;
+    
+    
+ }
+ 
+.Informacion-1 .Informacion-c1 {
+
+
+    text-align: center;
+    background-color: #ffff;
+    height: 400px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 5vw;
+    width: 25%;
+    height: 35%;
+}
+ .Informacion-2 .Informacion-c2 {
+    text-align: center;
+    
+    background-color: #ffff;
+    height: 400px;
+    padding-right: 0px;
+    padding-left: 0;
+    padding-bottom: 5vw;
+    width: 25%;
+    height: 35%;
+    
+}
+.Informacion-1 .informacion-a1 {
+    padding-top: 2vh;
+    padding-bottom: 2vw;
+    padding-left: 10%;
+  
+      
+}
+.Informacion-2 .informacion-a2{
+    padding-top: 2vh;
+    padding-bottom: 2vw;
+    padding-right: 10%;
+}
+.Informacion-1 .platillo{
+    width: 28vw;
+    height: 28vh;
+
+
+}
+.Informacion-2 .platillo2{
+    width: 28vw;
+    height: 28vh;
+
+}
+
+.Informacion-1 .Informacion-c1 p,.Informacion-2 .Informacion-c2 p{
+
+    width: fit-content;
+   
+
+}
+
+.Informacion-1 .Informacion-c1 h2 {
+    width: fit-content;
+    text-decoration: underline;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    font-family: 'satisfy', cursive;
+    color: #2c2c2c;
+}
+
+.Informacion-2 .Informacion-c2 h2{
+    width: fit-content;
+    text-decoration: underline;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    font-family: 'satisfy', cursive;
+    color: #2c2c2c;
+
+}
+
+
+
+
+    
+
+.Informacion-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: nowrap;
+    height:fit-content;
+    
+    gap:20px;
+
+}
+.Informacion-3 .container{
+    width:100%;
+    height:fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+
+}
+.Informacion-3 .card{
+    height: 400px;
+    width: 30%;
+    position: relative;
+    transition: all 1s linear;
+  
+    transform-style: preserve-3d;
+}
+
+ .Informacion-3 .card  .front, .back{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #fff59d;
+    position: absolute;
+ }
+ .Informacion-3 .card .front{
+    z-index:2;
+    backface-visibility: hidden;
+ }
+ .Informacion-3 .card .back{
+    z-index: 1;
+    transform: rotateY(180deg);
+ }
+ .card:hover {
+    transform: rotateY(180deg);
+
+ }
+.Informacion-3 .card .front img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.Informacion-3 .container .card .back{
+    text-align: center;
+
+}
+
+
+
+
+.Informacion-3 .platillo1,.platillo2,.platillo3,.platillo4,.platillo5{
+    width: 28vw;
+    height: 28vh;
+}
+

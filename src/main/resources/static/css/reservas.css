@@ -1,0 +1,113 @@
+/* Fondo general con superposición */
+.todo {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
+                url('https://wallpapers.com/images/featured/fondos-de-marmol-gris-bftbce838zyy4xew.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    color: #f8f9fa;
+    font-family: 'Poetsen One', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Contenedor principal con efecto glassmorphism */
+#div1 {
+    background-color: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 30px;
+    text-align: center;
+    width: 60%;
+    border-radius: 15px;
+    margin-right: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Círculo mesas estilizado */
+.circulo {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: 2px solid #ff4d4d;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.circulo:hover {
+    background-color: #ff4d4d;
+    transform: scale(1.15);
+    box-shadow: 0 0 10px #ff4d4d;
+}
+
+/* Etiqueta debajo del círculo */
+.circulo label {
+    position: absolute;
+    bottom: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2em;
+    color: #f8f9fa;
+}
+
+/* Contenedor secundario estilizado */
+#div2 {
+    background-color: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Botones modernos */
+.d-grid {
+    margin: 20px 0;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #ff4d4d, #ff1a1a);
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 4px 12px rgba(255, 77, 77, 0.4);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(255, 77, 77, 0.6);
+}
+
+/* Campo adicional */
+#razon {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#razon:focus {
+    border-color: #ff4d4d;
+    box-shadow: 0 0 8px #ff4d4d;
+}

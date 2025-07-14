@@ -1,0 +1,69 @@
+body{
+  background: black;
+  overflow-x: hidden;
+}
+.container{
+ min-height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+}
+.cubierta{
+ background-color: transparent; 
+ border: 2px solid rgba(255, 255, 255, .2);
+ width: 550px;
+ color:#fff;
+ border-radius: 10px;
+ padding:30px 40px
+  
+}
+.cubierta .form-container h1{
+    font-size: 36px;
+    text-align: center;
+
+}
+.cubierta .caja-input{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0; 
+}
+.cubierta .caja-input i{
+ position: absolute;
+ top:50%;
+ right: 20px;
+ transform: translateY(-60%);
+ 
+
+}
+.cubierta .caja-input input{
+
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    background: transparent;
+    font-size: 16px;
+    padding: 20px 35px 25px 29px;
+    color:#fff;
+    outline: auto;
+}
+.cubierta .registro-btn .btn-register{
+   width: 100%;
+   height: 45px;
+   border-radius: 40px;
+   font-size: 16px;
+   font-weight: 600;
+   outline: none;
+   border: none;
+}
+.cubierta .registro-btn .btn-register:hover{
+  
+background:#ddd ;
+cursor: pointer;
+ 
+}
+.cubierta .caja-input #visualizar,#visualizar2{
+    cursor: pointer;
+
+}
