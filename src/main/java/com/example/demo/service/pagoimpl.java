@@ -55,7 +55,7 @@ public class pagoimpl implements pagoservice {
         PaymentIntent resource = PaymentIntent.retrieve(id);
         PaymentIntentConfirmParams params = PaymentIntentConfirmParams.builder()
                 .setPaymentMethod("pm_card_visa")
-                .setReturnUrl("http://localhost:3600/index")
+                .setReturnUrl("https://restaurantevillahermosa.onrender.com/index")
                 .build();
         return resource.confirm(params);
     }
@@ -125,8 +125,8 @@ public class pagoimpl implements pagoservice {
                         .putMetadata("pedido_id", String.valueOf(pedidoId))
                         .build()
                 )
-                .setSuccessUrl("http://localhost:3000/success?pedido_id=" + pedidoId)
-                .setCancelUrl("http://localhost:3000/pedidos")
+                .setSuccessUrl("https://restaurantevillahermosa.netlify.app/success?pedido_id=" + pedidoId)
+                .setCancelUrl("https://restaurantevillahermosa.netlify.app/pedidos")
                 .addAllLineItem(lineItems)
                 .build();
 

@@ -6,8 +6,6 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
-
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
@@ -20,8 +18,8 @@ import java.util.function.Function;
 @Service
 public class jwtUtil {
 
-    @Value("${jwt.secret.key}")
-    private String secret;
+    // Clave secreta segura y codificada en Base64.
+    private String secret = "ZmRzYSBqYWd1YXJlc2VzIGVsIG1lam9yIGVxdWlwbyBkZWwgY2FtcGVvbmF0byBlY3VhdG9yaWFubw==";
 
     // Extrae el nombre de usuario (subject) del token
     public String extractUsername(String token) {
