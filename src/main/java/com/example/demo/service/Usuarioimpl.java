@@ -55,6 +55,11 @@ public class Usuarioimpl implements UsuarioService {
     public List<Usuario> traerusuarios() {
         return usuariodao.findAll();
     }
+@Value("${app.mail.from}")
+private String fromEmail;
+
+@Value("${app.mail.fromName:VillaHermosa}")
+private String fromName;
 
     @Override
     public String signup(Map<String, String> requestMap) {
